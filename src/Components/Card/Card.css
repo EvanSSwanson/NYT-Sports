@@ -1,0 +1,20 @@
+.Card {
+    width: 66vw;
+    margin: 1vw;
+}
+
+.top-section {
+    height: 12vw;
+    width: 100%;
+    border-style: solid;
+    border-width: .2vw;
+    border-color:aliceblue;
+}
+
+.bottom-section {
+    height: 4vw;
+    width: 100%;
+    border-style: solid;
+    border-width: .2vw;
+    border-color:aliceblue;
+}
