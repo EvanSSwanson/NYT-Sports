@@ -11,8 +11,6 @@ const App = () => {
   const [selected, setSelected] = useState(objectLayout)
   const [searchInput, setSearchInput] = useState('')
 
-
-
   const loadData = () => {
     fetchData()
     .then(data => {
