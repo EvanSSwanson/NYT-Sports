@@ -1,43 +1,85 @@
 import './MainView.css'
 import React, { useState, useEffect } from 'react'
-import { Form } from '../Form/Form'
 import Card from '../Card/Card'
 import { NavLink } from 'react-router-dom'
-import { useSearchParams } from "react-router-dom"
 
 const MainView = (props) => {
-    const [searchParams, setSearchParams] = useSearchParams()
-    const currentParams = Object.fromEntries([...searchParams])
-  
-    const [filtered, setFiltered] = useState(props.articles.filter((story) => {
-      const name = currentParams.title ? currentParams.title.toLowerCase() : ""
-      const nameMatches = story.title.toLowerCase().includes(name)
-      return nameMatches
-    }));
+    const [searchInput, setSearchInput] = useState('')
+    const [filtered, setFiltered] = useState(props.articles);
+
+    const handleChange = (e) => {
+        e.preventDefault();
+        setSearchInput(e.target.value);
+        setFiltered(props.articles.filter((story) =>
+        story.title.toLowerCase().includes(searchInput)))
+      };
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        setFiltered(props.articles)
       }, [])
+
+    const filteredResponses = filtered.map((story) => {
+        return (
+            <NavLink to='/article' onClick={() => props.setSelected(story)}>
+                <Card
+                    key={story.uri}
+                    id={story.uri}
+                    title={story.title}
+                    section={story.subsection}
+                    byline={story.byline}
+                    image={story.multimedia[1].url}
+                    imageAlt={story.multimedia[1].caption}
+                />
+            </NavLink>
+        )
+        })
+
+    const fullResponses = props.articles.map((story) => {
+        return (
+            <NavLink to='/article' onClick={() => props.setSelected(story)}>
+                <Card
+                    key={story.uri}
+                    id={story.uri}
+                    title={story.title}
+                    section={story.subsection}
+                    byline={story.byline}
+                    image={story.multimedia[1].url}
+                    imageAlt={story.multimedia[1].caption}
+                />
+            </NavLink>
+        )
+        })
 
   return (
     <div className='MainView'>
-        <Form />
+        <form>
+          <input
+            className="name-field"
+            id="name"
+            type="text"
+            placeholder="Search articles..."
+            onChange={handleChange}
+
+          />
+        </form>
         <div className="all-card-container">
-            {props.articles.map((story) => {
-            return (
-                <NavLink to='/article' onClick={() => props.setSelected(story)}>
-                    <Card
-                        key={story.uri}
-                        id={story.uri}
-                        title={story.title}
-                        section={story.subsection}
-                        byline={story.byline}
-                        image={story.multimedia[1].url}
-                        imageAlt={story.multimedia[1].caption}
-                    />
-                </NavLink>
-            )
-            })}
+            {searchInput === '' ? fullResponses : filteredResponses}
+            {/* {filtered.map((story) => {
+        return (
+            <NavLink to='/article' onClick={() => props.setSelected(story)}>
+                <Card
+                    key={story.uri}
+                    id={story.uri}
+                    title={story.title}
+                    section={story.subsection}
+                    byline={story.byline}
+                    image={story.multimedia[1].url}
+                    imageAlt={story.multimedia[1].caption}
+                />
+            </NavLink>
+        )
+        })} */}
         </div>
     </div>
   );

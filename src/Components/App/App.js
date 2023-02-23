@@ -9,6 +9,7 @@ import DetailedView from '../DetailedView/DetailedView'
 const App = () => {
   const [articles, setArticles] = useState([])
   const [selected, setSelected] = useState(objectLayout)
+  const [searchInput, setSearchInput] = useState('')
 
 
 
@@ -26,7 +27,7 @@ const App = () => {
     <div className='App'>
       <Header />
       <Routes>
-        <Route path='/' element={<MainView articles={articles} setSelected={setSelected}/>}/>
+        <Route path='/' element={<MainView articles={articles} setSelected={setSelected} searchInput={searchInput} setSearchInput={setSearchInput}/>}/>
         <Route path='/article' element={< DetailedView article={selected}/>} />
         {/* error route */}
       </Routes>
