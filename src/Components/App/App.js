@@ -1,16 +1,37 @@
-import './App.css';
-import React, { useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Header from '../Header/Header';
+import './App.css'
+import React, { useState, useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { fetchData, objectLayout } from '../../apiCalls'
+import Header from '../Header/Header'
 import MainView from '../MainView/MainView'
+import DetailedView from '../DetailedView/DetailedView'
 
-function App() {
+const App = () => {
+  const [articles, setArticles] = useState([])
+  const [selected, setSelected] = useState(objectLayout)
+
+
+
+  const loadData = () => {
+    fetchData()
+    .then(data => {
+      setArticles(data.results)})
+  }
+
+  useEffect(() => {
+    loadData()
+  }, [])
+
   return (
     <div className='App'>
       <Header />
-      <MainView />
+      <Routes>
+        <Route path='/' element={<MainView articles={articles} setSelected={setSelected}/>}/>
+        <Route path='/article' element={< DetailedView article={selected}/>} />
+        {/* error route */}
+      </Routes>
     </div>
   );
 }
 
-export default App;
+export default App

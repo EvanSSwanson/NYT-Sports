@@ -1,0 +1,106 @@
+.DetailedView {
+    display: flex;
+    width: 100%;
+}
+
+.page-left {
+    display: flex;
+    justify-content: center;
+    height: 60vw;
+    width: 20vw;
+}
+
+.subsection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5vw;
+    width: 6vw;
+    background-color: #ff5454;
+    margin-top: -1.53vw;
+}
+
+.page-subsection {
+    font-size: 1vw;
+    color:#ffffff;
+    cursor: default;
+}
+
+.page-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vw;
+    width: 60vw;
+    background-color: #21242b;
+}
+
+.red-banner {
+    height: 3vw;
+    width: 60vw;
+    background-color: #ff5454;
+}
+
+.page-title {
+    font-family: 'Gloock';
+    font-size: 2vw;
+    color:#d0dce6;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.page-author {
+    font-size: 1vw;
+    color:#c2cdd6;
+    margin-bottom: 1vw;
+}
+
+.page-image {
+    width: 50vw;
+}
+
+.page-abstract {
+    font-size: 1vw;
+    color:#c2cdd6;
+    margin-top: 1vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.published-date {
+    font-size: 1vw;
+    color:#c2cdd6;
+    margin-top: 10vw;
+    margin-left: 45vw;
+}
+
+.page-right {
+    height: 60vw;
+    width: 20vw;
+}
+
+.link-container, .home-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vw;
+    width: 9vw;
+    background-color: #ff5454;
+    margin-top: 9vw;
+    margin-left: -8vw;
+}
+
+.home-link-container {
+    margin-top: .5vw;
+}
+
+.nyt-link, .home-link {
+    font-family: 'Gloock';
+    font-size: 1.3vw;
+    color:#ffffff;
+}
+
+.link-container:hover, .home-link-container:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out 0.3s;
+}

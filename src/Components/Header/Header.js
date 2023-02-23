@@ -1,5 +1,5 @@
-import './Header.css';
-import { NavLink } from 'react-router-dom';
+import './Header.css'
+import { NavLink } from 'react-router-dom'
 import logo from '../../assets/icons8-soccer-goal-100-red.png'
 
 function Header() {
@@ -17,4 +17,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header

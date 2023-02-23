@@ -1,13 +1,13 @@
-import "./Form.css";
-import { useSearchParams } from "react-router-dom";
+import "./Form.css"
+import { useSearchParams } from "react-router-dom"
 
 export const Form = () => {
-    const [searchParams, setSearchParams] = useSearchParams();
-    const currentParams = Object.fromEntries([...searchParams]);
+    const [searchParams, setSearchParams] = useSearchParams()
+    const currentParams = Object.fromEntries([...searchParams])
   
     const handleChange = (event) => {
-      searchParams.set(event.target.id, event.target.value);
-      setSearchParams(searchParams);
+      searchParams.set(event.target.id, event.target.value)
+      setSearchParams(searchParams)
     };
   
     return (
@@ -26,4 +26,4 @@ export const Form = () => {
     );
   }
   
-  export default Form;
+  export default Form
