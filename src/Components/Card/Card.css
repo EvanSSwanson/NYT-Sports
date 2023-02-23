@@ -1,20 +1,67 @@
 .Card {
     width: 66vw;
     margin: 1vw;
+    background-color: #21242b;
 }
 
-.top-section {
+.Card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all ease-in-out 0.3s;
+}
+
+.red-block-top {
+    height: 4vw;
+    width: 3vw;
+    background-color: #ff5454;
+}
+
+.main-section {
+    display: flex;
     height: 12vw;
     width: 100%;
-    border-style: solid;
-    border-width: .2vw;
-    border-color:aliceblue;
 }
 
-.bottom-section {
-    height: 4vw;
-    width: 100%;
-    border-style: solid;
-    border-width: .2vw;
-    border-color:aliceblue;
+.card-image {
+    height: 12vw;
+}
+
+.main-section-right {
+    width: 42vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.card-title {
+    color: #c2cdd6;
+    font-family: "Gloock";
+    font-size: 1.5vw;
+    margin-left: 1.5vw;
+}
+
+.card-author {
+    color: #c2cdd6;
+    font-size: 1vw;
+    margin-left: 1.5vw;
+}
+
+.red-block-bottom {
+    display: flex;
+    height: 12vw;
+    width: 3vw;
+    background-color: #ff5454;
+}
+
+.bottom-container {
+    width: 42vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subsection {
+    color: #c2cdd6;
+    font-size: 1vw;
 }

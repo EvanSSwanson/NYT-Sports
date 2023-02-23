@@ -33,19 +33,25 @@ function Card(props) {
 
   return (
     <div className='Card'>
-        <div className='top-section'>
-            <div className='top-section-left'>
-
+        {/* <div className='top-banner'>
+          <div className='red-block-top'></div>
+          <p className='subsection'>{props.section === '' ? '___' : props.section}</p>
+        </div> */}
+        <div className='main-section'>
+            <div className='red-block-bottom'>
             </div>
-            <div className='top-section-right'>
+            <div className='main-section-left'>
+              <img src={props.image} className='card-image' alt={props.alt} />
+            </div>
+            <div className='main-section-right'>
                 <div className='title-container'>
                     <p className='card-title'>{props.title}</p>
                 </div>
-                <p className='author'>{props.byline}</p>
+                <div className='bottom-container'>
+                  <p className='card-author'>{props.byline}</p>
+                  <p className='subsection'>{props.section}</p>
+                </div>
             </div>
-        </div>
-        <div className='bottom-section'>
-            
         </div>
     </div>
   );
