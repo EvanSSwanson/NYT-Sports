@@ -1,5 +1,192 @@
-{
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
-}
+{"results": [{
+  "section": "sports",
+  "subsection": "baseball",
+  "title": "The Tigers Stay Patient in Baseball’s Waiting Game",
+  "abstract": "As the team’s president of baseball operations, Scott Harris wants to turn Detroit’s fortunes around. But he knows the team has a long way to go.",
+  "url": "https://www.nytimes.com/2023/02/22/sports/baseball/detroit-tigers-scott-harris.html",
+  "uri": "nyt://article/646b46c8-9fdf-5135-bb14-6551271abba6",
+  "byline": "By Tyler Kepner",
+  "item_type": "Article",
+  "updated_date": "2023-02-23T11:35:29-05:00",
+  "created_date": "2023-02-22T16:50:54-05:00",
+  "published_date": "2023-02-22T16:50:54-05:00",
+  "material_type_facet": "",
+  "kicker": "On Baseball",
+  "des_facet": [
+  "Baseball",
+  "Trades (Sports)",
+  "Content Type: Personal Profile"
+  ],
+  "org_facet": [
+  "Detroit Tigers"
+  ],
+  "per_facet": [
+  "Harris, Scott (1986- )",
+  "Rosen, Al (1924-2015)"
+  ],
+  "geo_facet": [ ],
+  "multimedia": [
+  {
+  "url": "https://static01.nyt.com/images/2023/02/22/multimedia/22kepner-tigers-top-mqpv/22kepner-tigers-top-mqpv-superJumbo.jpg",
+  "format": "Super Jumbo",
+  "height": 1365,
+  "width": 2048,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Javier Báez, left, struggled in his first year as Detroit’s shortstop and Jonathan Schoop, the team’s veteran infielder, slumped as well. They are two of the many Tigers players hoping to improve this season.",
+  "copyright": "David J. Phillip/Associated Press"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2023/02/22/multimedia/22kepner-tigers-top-mqpv/22kepner-tigers-top-mqpv-threeByTwoSmallAt2X.jpg",
+  "format": "threeByTwoSmallAt2X",
+  "height": 400,
+  "width": 600,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Javier Báez, left, struggled in his first year as Detroit’s shortstop and Jonathan Schoop, the team’s veteran infielder, slumped as well. They are two of the many Tigers players hoping to improve this season.",
+  "copyright": "David J. Phillip/Associated Press"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2023/02/22/multimedia/22kepner-tigers-top-mqpv/22kepner-tigers-top-mqpv-thumbLarge.jpg",
+  "format": "Large Thumbnail",
+  "height": 150,
+  "width": 150,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Javier Báez, left, struggled in his first year as Detroit’s shortstop and Jonathan Schoop, the team’s veteran infielder, slumped as well. They are two of the many Tigers players hoping to improve this season.",
+  "copyright": "David J. Phillip/Associated Press"
+  }
+  ],
+  "short_url": "https://nyti.ms/41nYpYW"
+  },
+  {
+  "section": "sports",
+ "subsection": "cycling",
+  "title": "The Cycling Champion Who Doesn’t Have to Win to Be Satisfied",
+  "abstract": "Ashton Lambie won a world championship in individual pursuit 16 months ago. Winning was great, he said, but now he just wants to explore.",
+  "url": "https://www.nytimes.com/2023/02/23/sports/cycling/ashton-lambie-cycling.html",
+  "uri": "nyt://article/a1980427-180c-5c01-b029-c805618b1cbc",
+  "byline": "By Kevin Draper",
+  "item_type": "Article",
+  "updated_date": "2023-02-23T10:28:18-05:00",
+  "created_date": "2023-02-23T05:00:25-05:00",
+  "published_date": "2023-02-23T05:00:25-05:00",
+  "material_type_facet": "",
+  "kicker": "",
+  "des_facet": [
+  "Cycling, Track",
+  "Cycling, Road",
+  "Bicycles and Bicycling",
+  "Sailboats and Sailing",
+  "Content Type: Personal Profile"
+  ],
+  "org_facet": [
+  "American Magic (New York Yacht Club)"
+  ],
+  "per_facet": [
+  "Armstrong, Lance",
+  "Landis, Floyd",
+  "Armstrong, Kristin",
+  "LeMond, Greg",
+  "Ashton Lambie"
+  ],
+  "geo_facet": [
+  "Roubaix (France)",
+  "Kansas"
+  ],
+  "multimedia": [
+  {
+  "url": "https://static01.nyt.com/images/2023/02/23/multimedia/23lambie-01-mfjc/23lambie-01-mfjc-superJumbo.jpg",
+  "format": "Super Jumbo",
+ "height": 1365,
+  "width": 2048,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "",
+  "copyright": "Christopher Smith for The New York Times"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2023/02/23/multimedia/23lambie-01-mfjc/23lambie-01-mfjc-threeByTwoSmallAt2X.jpg",
+  "format": "threeByTwoSmallAt2X",
+  "height": 400,
+  "width": 600,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "",
+  "copyright": "Christopher Smith for The New York Times"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2023/02/23/multimedia/23lambie-01-mfjc/23lambie-01-mfjc-thumbLarge.jpg",
+  "format": "Large Thumbnail",
+  "height": 150,
+  "width": 150,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "",
+  "copyright": "Christopher Smith for The New York Times"
+  }
+  ],
+  "short_url": "https://nyti.ms/3kscqDZ"
+  },
+  {
+  "section": "world",
+  "subsection": "australia",
+  "title": "A National Treasure on the Rise Is Hit With a Doping Allegation",
+  "abstract": "A star Olympic runner from Australia was suspended over a positive drug test of a kind that critics have called alarmingly open to human error.",
+  "url": "https://www.nytimes.com/2023/02/22/world/australia/peter-bol-doping-allegations-australia.html",
+  "uri": "nyt://article/76bc98a5-032a-52cc-b118-15ca67213a67",
+  "byline": "By Natasha Frost",
+  "item_type": "Article",
+  "updated_date": "2023-02-23T00:35:58-05:00",
+  "created_date": "2023-02-22T22:45:36-05:00",
+  "published_date": "2023-02-22T22:45:36-05:00",
+  "material_type_facet": "",
+  "kicker": "",
+  "des_facet": [
+  "Doping (Sports)",
+  "Running",
+  "Olympic Games (2020)",
+  "Tests (Drug Use)",
+  "Track and Field"
+  ],
+  "org_facet": [
+  "adidas AG"
+  ],
+  "per_facet": [ ],
+  "geo_facet": [
+  "Australia"
+  ],
+  "multimedia": [
+  {
+  "url": "https://static01.nyt.com/images/2023/02/22/multimedia/00OZ-RUNNER1-cwpg/00OZ-RUNNER1-cwpg-superJumbo.jpg",
+  "format": "Super Jumbo",
+  "height": 1365,
+  "width": 2048,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Peter Bol of Australia after winning the silver medal in an 800-meter race at the Commonwealth Games in Birmingham, England, last year.",
+  "copyright": "Ben Stansall/Agence France-Presse — Getty Images"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2023/02/22/multimedia/00OZ-RUNNER1-cwpg/00OZ-RUNNER1-cwpg-threeByTwoSmallAt2X.jpg",
+  "format": "threeByTwoSmallAt2X",
+  "height": 400,
+  "width": 600,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Peter Bol of Australia after winning the silver medal in an 800-meter race at the Commonwealth Games in Birmingham, England, last year.",
+  "copyright": "Ben Stansall/Agence France-Presse — Getty Images"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2023/02/22/multimedia/00OZ-RUNNER1-cwpg/00OZ-RUNNER1-cwpg-thumbLarge.jpg",
+  "format": "Large Thumbnail",
+  "height": 150,
+  "width": 150,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Peter Bol of Australia after winning the silver medal in an 800-meter race at the Commonwealth Games in Birmingham, England, last year.",
+  "copyright": "Ben Stansall/Agence France-Presse — Getty Images"
+  }
+  ],
+  "short_url": "https://nyti.ms/3ZgvrIA"
+  }]}

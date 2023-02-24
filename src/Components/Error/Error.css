@@ -1,0 +1,21 @@
+.error-msg {
+    color: #c2cdd6;
+    font-family: "Inter";
+    font-size: 1.5vw;
+}
+
+.return-home-button {
+    height: 2vw;
+    width: 10vw;
+    color: #ffffff;
+    font-family: "Gloock";
+    font-size: 1.2vw;
+    background-color: #ff5454;
+    border: none;
+}
+
+.return-home-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all ease-in-out 0.3s;
+}

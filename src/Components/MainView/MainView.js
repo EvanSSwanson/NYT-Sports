@@ -9,7 +9,7 @@ const MainView = (props) => {
 
     const handleChange = (e) => {
         e.preventDefault()
-        setSearchInput(e.target.value);
+        setSearchInput(e.target.value.toLowerCase());
       };
 
     useEffect(() => {
@@ -19,7 +19,7 @@ const MainView = (props) => {
 
       useEffect(() => {
         setFiltered(props.articles.filter((story) =>
-        story.title.toLowerCase().includes(searchInput)))
+        story.title.toLowerCase().includes(searchInput) || story.subsection.toLowerCase().includes(searchInput)))
       }, [searchInput])
 
     const filteredResponses = filtered.map((story) => {
@@ -56,7 +56,7 @@ const MainView = (props) => {
 
   return (
     <div className='MainView'>
-        <form>
+        <form className='form'>
           <input
             className="name-field"
             id="name"
@@ -65,6 +65,11 @@ const MainView = (props) => {
             onChange={handleChange}
           />
         </form>
+        {!props.articles.length ? (
+        <p>Could not load trails</p>
+      ) : (
+        (!filtered.length && searchInput !== '') && <p className='no-articles-msg'>No articles found</p>
+      )}
         <div className="all-card-container">
             {searchInput === '' ? fullResponses : filteredResponses}
         </div>

@@ -5,6 +5,7 @@ import { fetchData, objectLayout } from '../../apiCalls'
 import Header from '../Header/Header'
 import MainView from '../MainView/MainView'
 import DetailedView from '../DetailedView/DetailedView'
+import Error from '../Error/Error'
 
 const App = () => {
   const [articles, setArticles] = useState([])
@@ -26,8 +27,8 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/' element={<MainView articles={articles} setSelected={setSelected} searchInput={searchInput} setSearchInput={setSearchInput}/>}/>
-        <Route path='/article' element={< DetailedView article={selected}/>} />
-        {/* error route */}
+        <Route path='/article' element={< DetailedView article={selected}/>}/>
+        <Route path='/*' element={< Error />}/>
       </Routes>
     </div>
   );
